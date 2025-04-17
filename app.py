@@ -1,5 +1,6 @@
+import requests
 def ola_mundo():
- print(f'Olá Projeto Integrador 3')
-Workshop Git/GitHub 2
+ response = requests.get("https://api.github.com")
+ return f("Olá, turma! API Status: {response}")
 if __name__ == "__main__":
- ola_mundo()
+ ola_mundo
